@@ -28,4 +28,7 @@ jobs:
         cache: 'npm'
     - run: whoami
     - run: pwd
+    - run: su todolist
+    - run: cd /projects/todolist
+    - run: ls -l
     
