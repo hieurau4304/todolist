@@ -6,6 +6,6 @@ jobs:
   todolist_cicd:
      runs-on: self-hosted
      steps:
-       - uses: actions/checkout@v2
        - run: npm install
+       - uses: actions/checkout@v2
        
