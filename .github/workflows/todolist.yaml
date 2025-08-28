@@ -8,8 +8,9 @@ jobs:
      steps:
        - uses: actions/checkout@v2
        - name: copy file to /projects/todolist
-         script:
-           cp -rf * /projects/todolist
-           cd /projects/todolist
-           pwd
+         uses: appleboy/scp-action@master
+           script:
+             cp -rf * /projects/todolist
+             cd /projects/todolist
+             pwd
        
