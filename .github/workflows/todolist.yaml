@@ -6,7 +6,6 @@ jobs:
   todolist_cicd:
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v2
-      - run: npm install 
-      - run: npm run build
-      - run: npm run serve
+      - uses: actions/checkout@v4 # Checkout the repository
+      - name: Copy source code to another folder
+      run: cp -r ./* /projects/todolist
