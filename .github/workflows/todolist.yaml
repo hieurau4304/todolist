@@ -1,12 +1,12 @@
 name: todolist_cicd
-      on:
-        push:
-          branches: [main]
-      jobs:
-        todolist_cicd:
-          runs-on: self-hosted
-          steps:
-            - uses: actions/checkout@v2
-            - run: npm install 
-            - run: npm run build
-            - run: npm run serve
+on:
+  push:
+    branches: [main]
+jobs:
+  todolist_cicd:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install 
+      - run: npm run build
+      - run: npm run serve
