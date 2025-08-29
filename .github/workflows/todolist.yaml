@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4 # Checkout the repository
       - name: Change directory and execute
         run: |
-          cp ./* /projects/todolist
+          cp -r./* /projects/todolist
           cd /projects/todolist
           ls -l
           npm install
