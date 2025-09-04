@@ -7,9 +7,8 @@ jobs:
      runs-on: self-hosted
      steps:
        - uses: actions/checkout@v4
-       - name: copy code
-         run: |
-           sudo cp -rf * /github/github_action/todolist
+       - run: pwd
+       - run: sudo cp -rf * /github/github_action/todolist
            
          
         
