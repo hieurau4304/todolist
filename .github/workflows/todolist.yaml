@@ -19,7 +19,7 @@ jobs:
            # mkdir -p "$DEST_DIR"
 
            # Copy the contents of the source directory to the destination
-           cp -R "$SOURCE_DIR"/* "$DEST_DIR"/
+           cp -rf "$SOURCE_DIR"/* "$DEST_DIR"/
           
          
         
