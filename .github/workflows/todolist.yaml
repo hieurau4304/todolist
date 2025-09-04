@@ -20,7 +20,7 @@ jobs:
            cp -R "$SOURCE_DIR"/* "$DEST_DIR"/
         - name: Permission
           run: |
-          sudo chown -R itadmin:itadmin "DEST_DIR"
+           sudo chown -R itadmin:itadmin "DEST_DIR"
           
          
         
