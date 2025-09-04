@@ -7,8 +7,16 @@ jobs:
      runs-on: self-hosted
      steps:
        - uses: actions/checkout@v4
-       - run: pwd
-       - run: sudo cp -rf * /github/github_action/todolist
-           
+       - name: Copy source code to target folder
+        run: |
+          # Define source and destination paths relative to the runner's working directory
+          SOURCE_DIR="${{ github.workspace }}" # The default directory where actions/checkout places the code
+          DEST_DIR="/github/github_action/todolist # Replace with your actual target path
+
+          # Create the destination directory if it doesn't exist
+          
+
+          # Copy the contents of the source directory to the destination
+          cp -R "$SOURCE_DIR"/* "$DEST_DIR"/
          
         
