@@ -6,5 +6,9 @@ jobs:
    todolist_cicd:
      runs-on: self-hosted
      steps:
-       - run: whoami
-       - run: pwd
+       - uses: actions/checkout@v4
+       - name: copy code
+         run: |
+           sudo cp -rf /home/itadmin/actions-runner/_work/todolist/todolist/* /github/github_action/todolist
+         
+        
