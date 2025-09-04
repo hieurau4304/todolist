@@ -1,0 +1,10 @@
+name: todolist_cicd
+on:
+  push:
+    branches: [main]
+jobs:
+   todolist_cicd:
+     runs-on: self-hosted
+     steps:
+       - run: whoami
+       - run: pwd
