@@ -9,17 +9,12 @@ jobs:
        - uses: actions/checkout@v4
        - name: Copy source code to target folder
          run: |
-           # Define source and destination paths relative to the runner's working directory
            SOURCE_DIR="${{ github.workspace }}" # The default directory where actions/checkout places the code
            DEST_DIR="/github/github_action/todolist" # Replace with your actual target path
-
-           # Create the destination directory if it doesn't exist
-          
-
-           # Copy the contents of the source directory to the destination
+           
            cp -R "$SOURCE_DIR"/* "$DEST_DIR"/
-        - name: Permission
-          run: |
+       - name: Permission
+         run: |
            sudo chown -R itadmin:itadmin "DEST_DIR"
           
          
