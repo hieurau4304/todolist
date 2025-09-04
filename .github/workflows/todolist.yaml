@@ -11,11 +11,11 @@ jobs:
          run: |
            SOURCE_DIR="${{ github.workspace }}" # The default directory where actions/checkout places the code
            DEST_DIR="/github/github_action/todolist" # Replace with your actual target path
+
+           sudo chown -R itadmin:itadmin "DEST_DIR"
            
            cp -R "$SOURCE_DIR"/* "$DEST_DIR"/
-       - name: Permission
-         run: |
-           sudo chown -R itadmin:itadmin "DEST_DIR"
+       
           
          
         
