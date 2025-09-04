@@ -11,7 +11,7 @@ jobs:
          run: |
            # Define source and destination paths relative to the runner's working directory
            SOURCE_DIR="${{ github.workspace }}" # The default directory where actions/checkout places the code
-           DEST_DIR="/github/github_action/todolist # Replace with your actual target path
+           DEST_DIR="/github/github_action/todolist" # Replace with your actual target path
 
            # Create the destination directory if it doesn't exist
           
