@@ -18,5 +18,9 @@ jobs:
 
            # Copy the contents of the source directory to the destination
            cp -R "$SOURCE_DIR"/* "$DEST_DIR"/
+        - name: Permission
+          run: |
+          sudo chown -R itadmin:itadmin "DEST_DIR"
+          
          
         
