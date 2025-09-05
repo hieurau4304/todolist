@@ -29,6 +29,7 @@ jobs:
 
       - name: Deploy source project
         run: npm run serve
+        working-directory: /github/github_action/todolist
 
       
           
