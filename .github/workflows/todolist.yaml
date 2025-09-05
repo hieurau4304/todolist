@@ -23,7 +23,7 @@ jobs:
         
       - name: Run build project
         run: pwd 
-        working-directory: /github/github_action/todolist
+        # working-directory: /github/github_action/todolist
           
           
          
