@@ -24,6 +24,7 @@ jobs:
       - name: Run build project
         run: |
           cd /github/github_action/todolist 
+          npm install
           
           
          
