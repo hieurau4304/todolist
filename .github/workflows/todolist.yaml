@@ -22,8 +22,8 @@ jobs:
           cp -rf "$SOURCE_DIR"/* "$DEST_DIR"/
         
       - name: Run build project
-        run: pwd 
-        # working-directory: /github/github_action/todolist
+        run: |
+          cd /github/github_action/todolist 
           
           
          
