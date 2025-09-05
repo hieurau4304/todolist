@@ -25,6 +25,11 @@ jobs:
         run: |
           cd /github/github_action/todolist 
           npm install
+
+      - name: Deploy source project
+        run: npm run serve
+
+      
           
           
          
